@@ -4,7 +4,7 @@ service:
 provider:
   name: webtasks
   environment:
-    RETHINKDB_SERVER: "${env:RETHINKDB_SERVER, opt:kinesis-arn, self:provider.defaults.RETHINKDB_SERVER}"
+    RETHINKDB_SERVER: "${env:RETHINKDB_SERVER, opt:rethinkdb-server, self:provider.defaults.RETHINKDB_SERVER}"
   defaults:
     RETHINKDB_SERVER: "127.0.0.1"
 
