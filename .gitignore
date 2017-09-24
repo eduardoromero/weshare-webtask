@@ -4,4 +4,5 @@ node_modules
 # Serverless directories
 .serverless
 
-npm-debug.loggit add .
+npm-debug.log
+.idea
