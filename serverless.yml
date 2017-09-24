@@ -1,0 +1,16 @@
+service:
+  name: weshare-with-webtask
+
+provider:
+  name: webtasks
+  environment:
+    RETHINKDB_SERVER: "${env:RETHINKDB_SERVER, opt:kinesis-arn, self:provider.defaults.RETHINKDB_SERVER}"
+  defaults:
+    RETHINKDB_SERVER: "127.0.0.1"
+
+functions:
+  main:
+    handler: handler
+
+plugins:
+  - '@webtask/serverless-webtasks'

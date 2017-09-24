@@ -1,0 +1,27 @@
+{
+  "name": "WeShare-with-webtask.io",
+  "version": "1.0.0",
+  "description": "WeShare a FaaS implementation of file sharing service.",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "sls deploy",
+    "fix-style": "standard --verbose | snazzy"
+  },
+  "keywords": [
+    "serverless",
+    "webtasks"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "rethinkdbdash": "^2.3.31",
+    "webtask-tools": "^3.2.0"
+  },
+  "devDependencies": {
+    "@webtask/serverless-webtasks": "^1.0.1",
+    "serverless": "^1.23.0",
+    "serverless-offline": "^3.16.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}
